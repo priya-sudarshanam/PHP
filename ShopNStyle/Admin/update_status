@@ -1,0 +1,9 @@
+<?php
+include_once('model.php');
+
+update_order_details_admin('Delivered', 'Paypal', clean_vars($_GET['id']));
+
+header('location: orders.php');
+exit();
+
+?>
